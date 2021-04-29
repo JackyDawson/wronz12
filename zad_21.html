@@ -1,0 +1,74 @@
+<center><head>
+<title>Wrona</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<style>
+</style>
+
+<body>
+<table border=1>
+ <tr>
+ <td>pojęcie</td>
+<td colspan=4 align=center>znaczenie</td>
+ </tr>
+ 
+ <tr>
+ <td>Co znaczy skrót ID?</td>
+ <td colspan=4 align=center>Identyfikatory — ID</td>
+ </tr>
+ <tr>
+ </tr>
+ <tr>
+ <td>Jaki jest cel stosowania ID?</td>
+ <td  colspan=4 align=center>Dotychczas opisane selektory pozwalały na przypisanie danego formatowania wszystkim
+elementom odpowiadającym użytemu selektorowi.
+Jeśli chemy zróżnicowanie podobnych elementów można uzyskać:
+stosując identyfikator — ID.</td>
+ 
+ </tr>
+ <td>Jakie jest znaczenie znaku #</td>
+ <td  colspan=4 align=center>Przed definiowaniem identyfikatora występuje znak #.
+ </td>
+ 
+ </tr>
+ <tr>
+ <td>Jak następuje wywołanie ID (wraz z wytłumaczeniem)</td>
+ <td  colspan=4 align=center>Wywołanie identyfikatora to id="nazwa zdefiniowanego w CSS identyfikatora" czyli:
+Odpowiedni wpis składa się z selektora, do którego planujemy przypisać identyfikator, oraz z
+nazwy poprzedzonej znakiem #.<br>
+<textarea cols=40 rows=17>
+ p
+{
+color:green;
+font-size:14pt;
+}
+p#pochyly
+{
+font-style:italic;
+font-size:20pt;
+}
+<p>Blok tekstu o kolorze zielonym i czcionce 14pt</p>
+<p id="pochyly">Blok tekstu o kolorze zielonym i czcionce 20pt</p>
+<p>Blok tekstu o kolorze zielonym i czcionce 14pt</p>
+</textarea></td>
+ 
+ </tr>
+ <tr>
+ <td>Uwagi na temat stosowania ID (trzy) koniecznie wyliczenia</td>
+ <td  colspan=4 align=center>
+ <UL type=circle>
+ <LI>Różnica między id a classIdentyfikator może wystąpić tylko raz w całym
+dokumencie, natomiast klasę można powielać do woli.
+ <LI>Podobnie jak klasy, identyfikatorów, możemy używać tyle razy, ile razy uznamy to za
+konieczne. Działanie takie jest błędem, ale nie wpływa na poprawność działania
+strony.
+ <LI>Elementy oznaczone ID muszą być unikatowe, tzn., że na jednej stronie może
+wystąpić tylko 1 element z takim ID. Jeśli nie mamy pewności, czy element wystąpi
+więcej niż raz to możemy bez obaw użyć 'class', które może być przypisane do
+nieskończenie wielu elementów na stronie.
+ </UL>
+ </td>
+ 
+ 
+</table>
+</body></center>

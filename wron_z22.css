@@ -1,0 +1,17 @@
+ p
+{
+color:red;
+font-size:30pt;
+}
+p#gruby_wrona
+{
+color:green;
+font-weight:900;
+font-size:20pt;
+}
+#dlawszystkich_wrona
+{
+	color:yellow;
+	font-size:10pt;
+	font-style:Arial;
+}

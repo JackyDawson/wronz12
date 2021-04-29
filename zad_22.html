@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>styl zewnetrzny</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <LINK href="wron_z22.css" rel="stylesheet"
+type="text/CSS">
+</head>
+<body>
+<p>Jak dodawać liczby binarnie(Wrona)</p>
+<p>W momencie gdy wynik dodawania jest liczbą dwucyfrową (1 + 1 = 10)2 , 
+to pod kreską należy zapisać wyłącznie ostatnią cyfrę jaką jest 0, 
+a cyfrę 1 przenosimy do następnej kolumny
+– będziemy musieli ją dodać do wyniku sumowania cyfr w następnej kolumnie. </p>
+<p id="gruby_wrona">Jak mnożyć liczby binarne(wrona)</p>
+<p id="gruby_wrona">
+Każdą cyfrę mnożnej mnożymy przez poszczególne cyfry mnożnika zapisując wyniki mnożeń w odpowiednich kolumnach. 
+Działania są nawet prostsze niż w systemie dziesiętnym ponieważ wynik mnożenia jest zawsze jednocyfrowy. 
+Na końcu dodajemy do siebie wszystkie cyfry w kolumnach.
+</p>
+
+<h1 id="dlawszystkich_wrona">jak dzielić liczby binarne(wrona)</p>
+<div id="dlawszystkich_wrona">
+Podzielimy liczbę 1101(2) przez 10(2) (13(10) : 2(10)).
+Przesuwamy w lewo dzielnik, aż zrówna się jego najstarszy, niezerowy bit z najstarszym, niezerowym bitem dzielnej. Nad dzielną rysujemy kreseczkę:
+1101	 - dzielna
+10	 - przesunięty dzielnik
+Porównujemy dzielną z dzielnikiem. Jeśli dzielna jest większa lub równa dzielnikowi, to odejmujemy od niej dzielnik. Ponad kreską na pozycji ostatniej cyfry dzielnika piszemy 1. Jeśli dzielna jest mniejsza od dzielnika, to nie wykonujemy odejmowania, lecz przesuwamy dzielnik o 1 pozycję w prawo i powtarzamy opisane operacje. Jeśli w ogóle dzielnika nie da się odjąć od dzielnej (np. przy dzieleniu 7 przez 9), to wynik dzielenia wynosi 0, a dzielna ma w takim przypadku wartość reszty z dzielenia. W naszym przykładzie odejmowanie to jest możliwe, zatem:
+ 	 	1	 	 	 - pierwsza cyfra wyniku dzielenia
+ 	1	1	0	1	 - dzielna
+-	1	0	 	 	 - przesunięty dzielnik
+ 	0	1	0	1	 - wynik odejmowania dzielnika od dzielnej
+Dzielnik przesuwamy o jeden bit w prawo i próbujemy tego samego z otrzymaną różnicą. Jeśli odejmowanie jest możliwe, to nad kreską w następnej kolumnie dopisujemy 1, odejmujemy dzielnik od różnicy, przesuwamy go o 1 bit w prawo i kontynuujemy. Jeśli odejmowanie nie jest możliwe, to dopisujemy nad kreską 0, przesuwamy dzielnik o 1 bit w prawo i kontynuujemy.
+ 	 	1	1	0	 - wynik dzielenia
+ 	1	1	0	1	 - dzielna
+-	1	0	 	 	 - przesunięty dzielnik
+ 	0	1	0	1	 - dzielna po pierwszym odejmowaniu przesuniętego dzielnika
+-	 	1	0	 	 - przesunięty dzielnik
+ 	0	0	0	1	 - dzielna po drugim odejmowaniu przesuniętego dzielnika
+-	 	 	1	0	 - dzielnik na swoim miejscu, odejmowanie niemożliwe
+ 	0	0	0	1	 - reszta z dzielenia
+Operacje te wykonujemy dotąd, aż dzielnik osiągnie swoją pierwotną wartość. Pozostała dzielna jest resztą z dzielenia. Oczywiście w tym momencie możemy dalej kontynuować odejmowanie wg opisanych zasad otrzymując kolejne cyfry ułamkowe - identycznie postępujemy w systemie dziesiętnym. Jednakże pozostawimy ten problem do rozwiązania bardziej ambitnym czytelnikom.
+W naszym przykładzie otrzymaliśmy wynik dzielenia równy:
+
+1101(2) : 10(2) = 110(2) i resztę 1(2) (6(10) i 1(10))
+
+</div>
+ </body>
+</html>

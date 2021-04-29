@@ -1,0 +1,107 @@
+<center><textarea cols=100 rows=80><html>
+<head>
+<title>styl zewnetrzny</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <LINK href="wron_z22.css" rel="stylesheet"
+type="text/CSS">
+</head>
+<body>
+<p>Jak dodawać liczby binarnie(Wrona)</p>
+<p>W momencie gdy wynik dodawania jest liczbą dwucyfrową (1 + 1 = 10)2 , 
+to pod kreską należy zapisać wyłącznie ostatnią cyfrę jaką jest 0, 
+a cyfrę 1 przenosimy do następnej kolumny
+– będziemy musieli ją dodać do wyniku sumowania cyfr w następnej kolumnie. </p>
+<p id="gruby_wrona">Jak mnożyć liczby binarne(wrona)</p>
+<p id="gruby_wrona">
+Każdą cyfrę mnożnej mnożymy przez poszczególne cyfry mnożnika zapisując wyniki mnożeń w odpowiednich kolumnach. 
+Działania są nawet prostsze niż w systemie dziesiętnym ponieważ wynik mnożenia jest zawsze jednocyfrowy. 
+Na końcu dodajemy do siebie wszystkie cyfry w kolumnach.
+</p>
+
+<h1 id="dlawszystkich_wrona">jak dzielić liczby binarne(wrona)</p>
+<div id="dlawszystkich_wrona">
+Podzielimy liczbę 1101(2) przez 10(2) (13(10) : 2(10)).
+Przesuwamy w lewo dzielnik, aż zrówna się jego najstarszy, niezerowy bit z najstarszym, niezerowym bitem dzielnej. Nad dzielną rysujemy kreseczkę:
+1101	 - dzielna<title>Wrona</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<style>
+</style>
+<body><center>
+<div style="background-color: gray; width: 1194px" ; >
+ <span style="color: lime; font-size: 1.6cm">
+ Znacznik DIV (blok 1)--> Wrona
+ </span></br>
+<u><b><p style="font-size: 8mm">Element blokowy (DIV)</u></b> jest elementem blokowym może zawierać wewnątrz siebie zwykły tekst, jak również inne elementy blokowe. 
+Został on pomyślany do tworzenia obszerniejszych struktur<br>
+<UL type=circle STYLE="color:purple; font-size: 8mm">
+<LI>Służy do utworzenia sekcji (bloku) w pliku HTML w celu ich sformatowania za pomocą arkusza stylów CSS<br>
+<LI>Z div'a powinno się korzystać kiedy potrzebujemy wyodrębnić poszczególne bloki w układzie dokumentu, na przykład lewa kolumna, menu nawigacyjne, stopka<br>
+</p></div>
+ <div style="background-color: red; width: 1094px" ; >
+ <span style="color: fuchsia; font-size: 1.4cm">
+ Znacznik SPAN (blok 2)--> 29.04.2021 11:44
+ </span></br>
+ <UL type=circle STYLE="color:olive; font-size: 12mm">
+<LI>Elementy wyświetlanie w linii (SPAN) jest elementem liniowym nie mogą zawierać
+elementów blokowych, ale mogą inne elementy wyświetlane w linii oraz zwykły tekst. <br>
+<LI>Jeśli chcemy w paragrafie część tekstu wyróżnić czerwonym kolorem, do
+wyodrębnienia tego tekstu nie możemy użyć elementu div (paragraf <.p> z zasady
+nie może zawierać elementów blokowych) tylko span.Wewnątrz DIV można oczywiście wpisać również SPAN.
+<br>
+</p></div>
+<div style="background-color: gray; width: 994px" ; >
+ <span style="color: fuchsia; font-size: 1.1cm">
+ Różnica między znacznikami DIV i SPAN (blok 3)--> 2F
+ </span></br>
+<u><b><p style="font-size: 8mm"></u></b><br>
+<UL type=square STYLE="color:navy; font-size: 6mm">
+<LI>Span'em wyodrębniamy elementy liniowe (najczęściej fragmenty tekstu) a divem blokowe
+(blokowe elementy, większe fragmenty struktury składające się na układ strony)<br>
+<LI>Dodatkowo DIV domyślnie jest wyświetlany w bloku. Natomiast SPAN w linii.<br></p>
+</body></center>
+10	 - przesunięty dzielnik
+Porównujemy dzielną z dzielnikiem. Jeśli dzielna jest większa lub równa dzielnikowi, to odejmujemy od niej dzielnik. Ponad kreską na pozycji ostatniej cyfry dzielnika piszemy 1. Jeśli dzielna jest mniejsza od dzielnika, to nie wykonujemy odejmowania, lecz przesuwamy dzielnik o 1 pozycję w prawo i powtarzamy opisane operacje. Jeśli w ogóle dzielnika nie da się odjąć od dzielnej (np. przy dzieleniu 7 przez 9), to wynik dzielenia wynosi 0, a dzielna ma w takim przypadku wartość reszty z dzielenia. W naszym przykładzie odejmowanie to jest możliwe, zatem:
+ 	 	1	 	 	 - pierwsza cyfra wyniku dzielenia
+ 	1	1	0	1	 - dzielna
+-	1	0	 	 	 - przesunięty dzielnik
+ 	0	1	0	1	 - wynik odejmowania dzielnika od dzielnej
+Dzielnik przesuwamy o jeden bit w prawo i próbujemy tego samego z otrzymaną różnicą. Jeśli odejmowanie jest możliwe, to nad kreską w następnej kolumnie dopisujemy 1, odejmujemy dzielnik od różnicy, przesuwamy go o 1 bit w prawo i kontynuujemy. Jeśli odejmowanie nie jest możliwe, to dopisujemy nad kreską 0, przesuwamy dzielnik o 1 bit w prawo i kontynuujemy.
+ 	 	1	1	0	 - wynik dzielenia
+ 	1	1	0	1	 - dzielna
+-	1	0	 	 	 - przesunięty dzielnik
+ 	0	1	0	1	 - dzielna po pierwszym odejmowaniu przesuniętego dzielnika
+-	 	1	0	 	 - przesunięty dzielnik
+ 	0	0	0	1	 - dzielna po drugim odejmowaniu przesuniętego dzielnika
+-	 	 	1	0	 - dzielnik na swoim miejscu, odejmowanie niemożliwe
+ 	0	0	0	1	 - reszta z dzielenia
+Operacje te wykonujemy dotąd, aż dzielnik osiągnie swoją pierwotną wartość. Pozostała dzielna jest resztą z dzielenia. Oczywiście w tym momencie możemy dalej kontynuować odejmowanie wg opisanych zasad otrzymując kolejne cyfry ułamkowe - identycznie postępujemy w systemie dziesiętnym. Jednakże pozostawimy ten problem do rozwiązania bardziej ambitnym czytelnikom.
+W naszym przykładzie otrzymaliśmy wynik dzielenia równy:
+
+1101(2) : 10(2) = 110(2) i resztę 1(2) (6(10) i 1(10))
+
+</div>
+ </body>
+</html>
+
+
+
+ p
+{
+color:red;
+font-size:30pt;
+}
+p#gruby_wrona
+{
+color:green;
+font-weight:900;
+font-size:20pt;
+}
+#dlawszystkich_wrona
+{
+	color:yellow;
+	font-size:10pt;
+	font-style:Arial;
+}
+
+</textarea></center>

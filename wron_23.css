@@ -1,0 +1,28 @@
+
+p#pogrubienie_wrona{
+color:#9556D4;
+font-size:30px;
+}
+p#pochylona_wrona{
+	font-size:35pt;
+	color:#F7BA70;
+}
+p#index_gorny_wrona{
+	font-size:1cm;
+	color:#A88820;
+}
+p#index_dolny_wrona{
+	font-size:1.5cm;
+	color:rgb(67%,236%,232%);
+}
+p#mono_wrona{
+	font-size:40px;
+	color:#27D870;
+}
+p#powiekszenie_wrona{
+	color:#6138A2;
+}
+p#pomniejszenie_wrona{
+	color:rgb(197%,156%,62%);
+	
+}
