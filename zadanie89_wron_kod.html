@@ -1,0 +1,116 @@
+<textarea cols=100 rows=80><!- okreslenie typu HTML dla walidatora -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<! xmlns okresla przestrzeń nazw dla xml -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+<title>styl wewnetrzny body</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!- styl wewnetrzny -->
+<style type="text/css">
+ /* zerowanie wszystkich marginesów i przestrzeni*/
+ * {
+ margin: 0px;
+ padding: 0px; 
+ }
+ /* definicja div*/
+ /* overflow: hidden - -> ukrycie nadmiarowości czyli gdy elementy div są za duże*/
+ div {
+ overflow: hidden;
+ }
+ /* definicja ramki-główny element*/
+ /* margin-right: auto;-wartość domyślna */
+ #ramka {
+ background-color: #C93;
+ width: 1000px;
+ margin-right: auto;
+ margin-left: auto;
+ } 
+ /* definicja nagłówka*/ 
+ #naglowek {
+ width: 100%;
+ background-color: #FFCC00;
+ color:green;
+ text-align : center;
+ font-size: 1cm;
+ }
+ /* definicja stopki*/ 
+ #stopka {
+ width: 100%;
+ background-color: #F93; 
+ }
+ /* definicja klasy kolumny */
+ .kolumny {
+ width:30%;
+ margin-top:10px;
+ margin-right:2%;
+ margin-bottom:2%;
+ margin-left:10px;
+ }
+ /* definicje trzech kolumn */
+ /* float :left; to aby elementy były obok siebie */ 
+ 
+ #kolumna_pierwsza {
+ float:left;
+ background-color: #99FF99;
+ }
+ #kolumna_druga {
+ float:left;
+ background-color: #0099FF;
+ } 
+ #kolumna_trzecia { 
+ background-color: #CC0000;
+ float:left;
+ }
+</style>
+</head>
+<body>
+
+ <div id="ramka">
+ <div id="naglowek">Wrona Bartosz 2F</div>
+ <div class="kolumny" id="kolumna_pierwsza">
+ <p><ol><li> w oparciu o tabele (HTML->nie stosowane)</li>
+<li> w oparciu o iframe (HTML->nie stosowane)</li>
+<li>na DIVach</li>
+<li>w oparciu o instrukcje HTML5</li></ol>
+</p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ </div>
+ <div class="kolumny" id="kolumna_druga">
+ <p>  overflow: hidden;-> Za pomocą wartości hidden właściwości overflow możemy sprawić, że treść niemieszcząca się w obszarze wyznaczonym przez zewnętrzną krawędź prawego lub dolnego wewnętrznego marginesu interesującego nas elementu HTML zostanie ukryta.<br>
+ float:left; ->Własność float określa, że element powinien być wyjęty z normalnego przepływu i umieszczony przy lewej lub prawej stronie zawierającego go kontenera, zaś tekst i elementy liniowe będą zawijały się wokół niego.<br>
+ margin-top:10px; -> Określa grubość górnego marginesu<br>
+ margin-right:2%;->Określa grubość prawego marginesu<br>
+ margin-bottom:2%;->Za pomocą właściwości margin-bottom możemy określić rozmiar dolnego zewnętrznego marginesu interesującego nas elementu HTML.<br>
+ margin-left:10px->Określa grubość lewego marginesu<br> </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ </div>
+ <div class="kolumny" id="kolumna_trzecia">
+ <p> <ol><li>SECTION</li>
+<li>ARTICKLE</li>
+<li>ASIDE</li>
+<li>HEADER</li>
+<li>FOOTER</li>
+<li>NAV</li></ol> </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ </div>
+ <div id="stopka"><a href="index.html" >powrót</a></br> 
+ <ol><li> w oparciu o tabele (HTML->nie stosowane)</li>
+<li> w oparciu o iframe (HTML->nie stosowane)</li>
+<li>na DIVach</li>
+<li>w oparciu o instrukcje HTML5</li></ol>
+ </div> 
+ </div> 
+</body>
+</html>
+<!Bartosz Wrona-->
+</textarea>
